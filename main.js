@@ -22,47 +22,46 @@ function funzioneCalcoloPrezzo(event){
             
             break;
     }   
-
+    let cont=0;
     for(let i=0; i<arrayCodiciSconto.length ; i++){
-        if(codiciSconto==arrayCodiciSconto[i]){
-        prezzo=prezzo*0.75;
-        document.getElementById("risultato").innerHTML=prezzo;
+        if((codiciSconto==arrayCodiciSconto[i])&&( lavoro =="1")){
+            prezzo = prezzo*0.75;
+            alert("Sconto accettato");
+            cont=cont+1;
+            break;
         
-    }else if(codiciSconto!=arrayCodiciSconto[i]){
-        document.getElementById("risultato").innerHTML=prezzo;
-    }else{
-    }
-}   
+        }else if((codiciSconto==arrayCodiciSconto[i]) &&( lavoro =="2")){
+            prezzo = prezzo*0.75;
+            alert("Sconto accettato");
+            cont=cont+1;
+            break;
 
-
+        }else if((codiciSconto==arrayCodiciSconto[i]) &&( lavoro =="3")){
+            prezzo = prezzo*0.75;
+            alert("Sconto accettato");
+            cont=cont+1;
+            break;
+        }
+    }  
+    console.log(cont);
+    if (cont==0){
+        alert ("Sconto non applicato");
+        document.getElementById("risultato").innerHTML="il prezzo finale è: " +prezzo.toFixed(2);
+        return cont;
+        
+    }else {
+        document.getElementById("risultato").innerHTML="il prezzo finale è: " +prezzo.toFixed(2);
+        return cont;
+    } 
 } 
 
-    
-/*if(back=="backEnd"){
-        prezzoFinale=20.5*oreDiLavoro;
-        prezzo=prezzoFinale;
-        document.getElementById("risultato").innerHTML=prezzo;
-    
-    }else if(front=="frontEnd"){
-        prezzoFinale=15.3*oreDiLavoro;
-        prezzo=prezzoFinale;
-        document.getElementById("risultato").innerHTML=prezzo;
-
-    }else{
-        prezzoFinale=33.6*oreDiLavoro;
-        prezzo=prezzoFinale;
-        document.getElementById("risultato").innerHTML=prezzo;
-      
-    }   */
-
-    /*for(let i=0 ; i<arrayCodiciSconto.length ; i++){
-    console.log(arrayCodiciSconto[i]);
-    if(codiciSconto==arrayCodiciSconto[i]){
-        prezzo=20.5*oreDiLavoro*0.75;
-
-        document.getElementById("risultato").innerHTML=prezzo;
-    }else{
-        prezzo=20.5*oreDiLavoro;
-        document.getElementById("risultato").innerHTML=prezzo;
+/*
+function coloreRosso(){
+    if (cont==0){
+        document.getElementById("codiceSconto").style.color = "red";
     }
-}*/
+    
+}
+let cont=0;
+console.log(cont);
+*/
