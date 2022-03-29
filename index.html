@@ -9,30 +9,30 @@
     </head>
     <body>
         <div class="container">
-
+            <!--intestazione portfolio e contact me-->
             <div class="row m-0 justify-content-center">
 
                 <div class="col-4 bg-dark ">
                     <p class="text-info align-middle ms-5 mb-1 p-2">Portfolio</p>
                 </div>
 
-                <div class="col-3 bg-dark">
+                <div class="col-4 bg-dark">
 
                 </div>
 
                 <div class="col-4 bg-dark">
                     <p class="text-info text-end align-middle me-5 mb-1 p-2"> <a href="#" class="text-reset">CONTACT ME</a></p>
                 </div>
-
+            <!--fine intestazione-->
             </div>
-
+            <!--allineamento foto e testo, con bg -->
             <div class="row m-0 justify-content-center">
 
                 <div class="col-4 bg-info p-0">
 
                 </div>
 
-                <div class="col-3 bg-info pt-5 p-0">
+                <div class="col-4 bg-info pt-5 p-0">
                     <img src="./img/immagine.png" class="rounded-circle img-thumbnail" alt="error">
                     <p class="h3 text-center"><strong>Pinco Pallo</strong></p>
                     <p class="text-center pb-5"><small><strong>WEB DESIGNER</strong></small></p>
@@ -41,9 +41,10 @@
                 <div class="col-4 bg-info p-0">
 
                 </div>
-                
+            <!--fine parte iniziale-->
             </div>
-
+            <!--inizio body con inserimento card e button-->
+            <!--prima row card-->
             <div class="row m-0 justify-content-center">
 
                 <p class="h3 text-center mt-3">PORTFOLIO</p>
@@ -79,8 +80,9 @@
                 </div>
                 
               </div>
-
-              <div class="row m-0 mt-4 justify-content-center">
+              <!--fine prima fila card -->
+              <!--inizio seconda row card button-->
+            <div class="row m-0 mt-4 justify-content-center">
 
                 <div class="col-3">
                     <div class="card">
@@ -113,9 +115,86 @@
                   </div>
                 </div>
                 
-              </div>
-
             </div>
+              <!--fine seconda fila -->
+              <!--inizio parte questionario-->
+              <form class="row m-0 justify-content-center bg-info">
+                <p class="h3 text-center mt-3 bg-info">WANT AN OFFER?</p>
+                <div class="row justify-content-center">
+                <div class="col-1 bg-info">
+
+                </div>
+                <div class="col-5 bg-info">
+                  <label for="firstName" class="form-label mt-2 mb-2">First Name</label>
+                  <input type="text" class="form-control" id="firstName">
+                </div>
+                <div class="col-5 bg-info">
+                  <label for="lastName" class="form-label mt-2 mb-2">Last Name</label>
+                  <input type="text" class="form-control" id="lastName">
+                </div>
+                <div class="col-1 bg-info">
+
+                </div>
+
+                <div class="col-1 bg-info">
+
+                </div>
+                <div class="col-5 bg-info">
+                  <label for="inputEmail" class="form-label mt-2 mb-2">Email address</label>
+                  <input type="email" class="form-control" id="inputEmail">
+                </div>
+                <div class="col-5 bg-info">
+                  <label for="oreRichieste" class="form-label mt-2 mb-2">Hours requested</label>
+                  <input type="text" class="form-control" id="oreRichieste">
+                </div>
+                <div class="col-1 bg-info">
+
+                </div>
+
+                <div class="col-1 bg-info">
+
+                </div>
+                <div class="col-5 bg-info">
+                    <label for="tipoDiLavoro" class="form-label mt-2 mb-2">Type of work</label>
+                    <select id="tipoDiLavoro" class="form-select">
+                        <option selected>Select work</option>
+                        <option value="backEnd">Backend developer</option>
+                        <option value="frontEnd">Frontend developer</option>
+                        <option value="analisi">Project analyst</option>
+                    </select>       
+                </div>
+                <div class="col-5 bg-info">
+                  <label for="codiceSconto" class="form-label mt-2 mb-2">Discount code</label>
+                  <input type="text" class="form-control" id="codiceSconto">
+                </div>
+                <div class="col-1 bg-info">
+
+                </div>
+
+                <div class="col-1 bg-info">
+
+                </div>
+                <div class="col-10 bg-info">
+                    <label for="message" class="form-label mt-2 mb-2">Message</label>
+                    <textarea class="form-control" id="Message" rows="3"></textarea>
+                </div>
+                <div class="col-1 bg-info">
+
+                </div>
+                <div class="col-1 bg-info">
+
+                </div>
+                <div class="col-10 bg-info text-center">
+                    <button type="submit" class="btn btn-warning mt-3 mb-3">Send</button>
+                </div>
+                <div class="col-1 bg-info">
+
+                </div>
+            </div>
+                
+              </form>
+        </div>
+        
 
 
     
