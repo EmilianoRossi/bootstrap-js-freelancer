@@ -82,7 +82,7 @@
               </div>
               <!--fine prima fila card -->
               <!--inizio seconda row card button-->
-            <div class="row m-0 mt-4 justify-content-center">
+            <div class="row m-0 mt-4 mb-5 justify-content-center">
 
                 <div class="col-3">
                     <div class="card">
@@ -144,8 +144,8 @@
                   <input type="email" class="form-control" id="inputEmail">
                 </div>
                 <div class="col-5 bg-info">
-                  <label for="oreRichieste" class="form-label mt-2 mb-2">Hours requested</label>
-                  <input type="text" class="form-control" id="oreRichieste">
+                  <label for="oreRichieste" class="input-number-label mt-2 mb-2">Hours requested</label>
+                  <input type="number" class="form-control" id="oreRichieste">
                 </div>
                 <div class="col-1 bg-info">
 
@@ -158,9 +158,9 @@
                     <label for="tipoDiLavoro" class="form-label mt-2 mb-2">Type of work</label>
                     <select id="tipoDiLavoro" class="form-select">
                         <option selected>Select work</option>
-                        <option value="backEnd">Backend developer</option>
-                        <option value="frontEnd">Frontend developer</option>
-                        <option value="analisi">Project analyst</option>
+                        <option value="1">Backend developer</option>
+                        <option value="2">Frontend developer</option>
+                        <option value="3">Project analyst</option>
                     </select>       
                 </div>
                 <div class="col-5 bg-info">
@@ -176,7 +176,7 @@
                 </div>
                 <div class="col-10 bg-info">
                     <label for="message" class="form-label mt-2 mb-2">Message</label>
-                    <textarea class="form-control" id="Message" rows="3"></textarea>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
                 </div>
                 <div class="col-1 bg-info">
 
@@ -185,10 +185,14 @@
 
                 </div>
                 <div class="col-10 bg-info text-center">
-                    <button type="submit" class="btn btn-warning mt-3 mb-3">Send</button>
+                    <button type="submit" class="btn btn-warning mt-3 mb-3" id="bottoneSend">Send</button>
                 </div>
                 <div class="col-1 bg-info">
+                
+                </div>
 
+                <div class="row justify-content-center text-center bg-info">
+                    <p id="risultato" class="h3"></p>
                 </div>
             </div>
                 
